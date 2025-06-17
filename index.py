@@ -1,8 +1,18 @@
 import tkinter as tk
 
-root = tk.Tk()
+window = tk.Tk()
 
-root.title("Simple GUI")
-root.geometry("500x500")
+window.title("Simple GUI")
 
-root.mainloop()
+window_width = 500
+window_height = 500
+
+screen_width = window.winfo_screenwidth()
+screen_height = window.winfo_screenheight()
+
+x = (screen_width // 2) - (window_width // 2)
+y = (screen_height // 2) - (window_height // 2)
+
+window.geometry(f'{window_width}x{window_height}+{x}+{y}')
+
+window.mainloop()

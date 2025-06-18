@@ -21,7 +21,7 @@ def check_age():
 label = tk.Label(window,text="What is your name?")
 label.pack()
 
-txt = tk.Text(window, height=1, width=3)
+txt = tk.Text(window, height=1, width=15)
 txt.pack()
 
 btn = tk.Button(window, text='Submit', command=check_age)

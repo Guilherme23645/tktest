@@ -19,7 +19,7 @@ def your_name():
 	response.config(text=f"Name: {txt.get('1.0','end-1c')}")
 
 label = tk.Label(window,text="What is your name?")
-label.pack(pady=(0,10))
+label.pack(pady=(10,10))
 
 txt = tk.Text(window, height=1, width=15)
 txt.pack(pady=(0,10))

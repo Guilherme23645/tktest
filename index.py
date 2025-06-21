@@ -38,6 +38,8 @@ caption.pack(pady=(0,10))
 
 txt = tk.Text(window, height=1, width=15)
 txt.pack(pady=(0,10))
+txt.bind("<Return>", lambda e: "break")
+txt.bind("<Key-Return", lambda e: "break")
 
 btn = tk.Button(window, text='Submit', command=your_name)
 btn.pack(pady=(0,10))

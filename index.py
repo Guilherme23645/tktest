@@ -24,7 +24,7 @@ label.pack(pady=(0,10))
 txt = tk.Text(window, height=1, width=15)
 txt.pack(pady=(0,10))
 
-btn = tk.Button(window, text='Submit', command=check_age)
+btn = tk.Button(window, text='Submit', command=your_name)
 btn.pack(pady=(0,10))
 
 response = tk.Label(window, text='')

@@ -17,6 +17,7 @@ window.geometry(f'{window_width}x{window_height}+{x}+{y}')
 
 def your_name():
 	response.config(text=f"Name: {txt.get('1.0','end-1c')}")
+	txt.delete('1.0', tk.END)
 
 label = tk.Label(window,text="What is your name?")
 label.pack(pady=(10,10))

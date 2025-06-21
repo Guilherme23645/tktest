@@ -19,15 +19,15 @@ def your_name():
 	response.config(text=f"Name: {txt.get('1.0','end-1c')}")
 
 label = tk.Label(window,text="What is your name?")
-label.pack()
+label.pack(pady=(0,10))
 
 txt = tk.Text(window, height=1, width=15)
-txt.pack()
+txt.pack(pady=(0,10))
 
 btn = tk.Button(window, text='Submit', command=check_age)
-btn.pack()
+btn.pack(pady=(0,10))
 
 response = tk.Label(window, text='')
-response.pack()
+response.pack(pady=(0,0))
 
 window.mainloop()

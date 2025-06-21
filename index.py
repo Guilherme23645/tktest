@@ -23,8 +23,8 @@ def load_image(path, width=None, height=None):
 	return ImageTk.PhotoImage(img)
 
 def your_name():
-	response.config(text=f"Name: {txt.get('1.0','end-1c')}")
-	txt.delete('1.0', tk.END)
+	response.config(text=f"Name: {txt.get()}")
+	txt.delete(0, tk.END)
 
 label = tk.Label(window,text="Tell us who you are")
 label.pack(pady=(10,10))
@@ -36,10 +36,8 @@ lblImage.pack()
 caption = tk.Label(window, text='(Please upload your photo)')
 caption.pack(pady=(0,10))
 
-txt = tk.Text(window, height=1, width=15)
+txt = tk.Entry(window, width=15)
 txt.pack(pady=(0,10))
-txt.bind("<Return>", lambda e: "break")
-txt.bind("<Key-Return>", lambda e: "break")
 
 btn = tk.Button(window, text='Submit', command=your_name)
 btn.pack(pady=(0,10))

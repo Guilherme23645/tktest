@@ -15,7 +15,7 @@ y = (screen_height // 2) - (window_height // 2)
 
 window.geometry(f'{window_width}x{window_height}+{x}+{y}')
 
-def check_age():
+def your_name():
 	response.config(text=f"Name: {txt.get('1.0','end-1c')}")
 
 label = tk.Label(window,text="What is your name?")
